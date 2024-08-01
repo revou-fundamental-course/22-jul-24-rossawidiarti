@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agent Website</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img src="/image/oceanbreeze.png" alt="">
+                        <a href="#">Ocean Breeze</a>
+                    </div>
+
+                    <div class="menu">
+                        <ul id="menuList" class="hidden">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                        </ul>
+
+                        <div class="menu-icon">
+                            <i class="ph ph-list" onclick="toggleMenu()"></i>
+                        </div>
+                        
+                        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h2>Start your vacation with Ocean Breeze Tours & Travel</h3>
+            <p>We've gained the trust of over 1000 customers.</p>
+
+            <div class="main-content">
+                <div class="left-container">
+                    <h4>Where do you want to go?</h4>
+
+                    <div class="slideBanner">
+                        <div class="slide"><img src="/image/jkt.jpg" alt="Jakarta"></div>
+                        <div class="slide"><img src="/image/bdg.jpg" alt="Bandung"></div>
+                        <div class="slide"><img src="/image/smg.jpg" alt="Semarang"></div>
+                        <div class="slide"><img src="/image/yk.jpg" alt="Yogyakarta"></div>
+                        <div class="slide"><img src="/image/mlg.jpg" alt="Malang"></div>
+                        <div class="slide"><img src="/image/sby.jpg" alt="Surabaya"></div>
+                        <div class="slide"><img src="/image/jkt.jpg" alt="Jakarta"></div>
+                        <div class="slide"><img src="/image/bdg.jpg" alt="Bandung"></div>
+                        <div class="slide"><img src="/image/smg.jpg" alt="Semarang"></div>
+                        <div class="slide"><img src="/image/yk.jpg" alt="Yogyakarta"></div>
+                        <div class="slide"><img src="/image/mlg.jpg" alt="Malang"></div>
+                        <div class="slide"><img src="/image/sby.jpg" alt="Surabaya"></div>
+                        <div class="slide"><img src="/image/jkt.jpg" alt="Jakarta"></div>
+                        <div class="slide"><img src="/image/bdg.jpg" alt="Bandung"></div>
+                        <div class="slide"><img src="/image/smg.jpg" alt="Semarang"></div>
+                        <div class="slide"><img src="/image/yk.jpg" alt="Yogyakarta"></div>
+                        <div class="slide"><img src="/image/mlg.jpg" alt="Malang"></div>
+                        <div class="slide"><img src="/image/sby.jpg" alt="Surabaya"></div>
+                    </div>
+                </div>
+                
+                <div class="right-container">
+                    <h4>Call Us</h4>
+                    <p>Kami akan menghubungi anda dalam 1x24 jam 
+                        untuk memberikan penawaran terbaik stelah menerima data anda.
+                    </p>
+                    
+                    <form action="">
+                        <div class="form-container">
+                            <label for="inputNama">Your Name:</label>
+                            <input type="text" id="inputNama" required>
+                        </div>
+
+                        <div class="form-container">
+                            <label for="inputEmail">Email Address:</label>
+                            <input type="email" id="inputEmail" required>
+                        </div>
+
+                        <div class="select-container">
+                            <label for="selectFrom">What are you interested in?:</label>
+                            <select name="" id="selectFrom">
+                                <option value="jakarta" id="value">Jakarta</option>
+                                <option value="bandung" id="value">Bandung</option>
+                                <option value="semarang" id="value">Semarang</option>
+                                <option value="yogyakarta" id="value">Yogyakarta</option>
+                                <option value="malang" id="value">Malang</option>
+                                <option value="surabaya" id="value">Surabaya</option>
+                            </select>
+                        </div>
+
+                        <button onclick="sendData()">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages">
+            <h2>Packages</h2>
+
+            <div class="packages-container">
+                <div class="package">
+                    <div class="icon">💡</div>
+                    <h3>Jakarta</h3>
+                    <p>Memiliki lebih dari 500 tempat wisata dengan 500.000 kunjungan pertahun.</p>
+                </div>
+
+                <div class="package">
+                    <div class="icon">💡</div>
+                    <h3>Bandung</h3>
+                    <p>Memiliki lebih dari 500 tempat wisata dengan 500.000 kunjungan pertahun.</p>
+                </div>
+
+                <div class="package">
+                    <div class="icon">💡</div>
+                    <h3>Semarang</h3>
+                    <p>Memiliki lebih dari 500 tempat wisata dengan 500.000 kunjungan pertahun.</p>
+                </div>
+
+                <div class="package">
+                    <div class="icon">💡</div>
+                    <h3>Yogyakarta</h3>
+                    <p>Memiliki lebih dari 500 tempat wisata dengan 500.000 kunjungan pertahun.</p>
+                </div>
+
+                <div class="package">
+                    <div class="icon">💡</div>
+                    <h3>Malang</h3>
+                    <p>Memiliki lebih dari 500 tempat wisata dengan 500.000 kunjungan pertahun.</p>
+                </div>
+
+                <div class="package">
+                    <div class="icon">💡</div>
+                    <h3>Surabaya</h3>
+                    <p>Memiliki lebih dari 500 tempat wisata dengan 500.000 kunjungan pertahun.</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="/js/script.js"></script>
+
+        <footer></footer>
+    </body>
+</html>
